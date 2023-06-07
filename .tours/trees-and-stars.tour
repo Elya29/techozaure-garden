@@ -1,0 +1,132 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Trees and stars",
+  "steps": [
+    {
+      "file": "index.html",
+      "selection": {
+        "start": {
+          "line": 66,
+          "character": 9
+        },
+        "end": {
+          "line": 66,
+          "character": 39
+        }
+      },
+      "description": "Cette div est un container pour recevoir les SVG générés dynamiquement au clic."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 10,
+          "character": 4
+        },
+        "end": {
+          "line": 16,
+          "character": 6
+        }
+      },
+      "description": "On précharge les chemins des SVG pour ne pas ralentir l'event listener."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 9
+        },
+        "end": {
+          "line": 20,
+          "character": 66
+        }
+      },
+      "description": "On vérifie quelle zone a été cliquée (en haut ou en bas) en comparant event.clientY avec la constante halfWindow définie à la ligne 7, qui calcule la moitié de la hauteur de la fenêtre."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 9
+        },
+        "end": {
+          "line": 27,
+          "character": 112
+        }
+      },
+      "description": "Selon si l'écran a été cliqué en haut ou en bas, on ajoute la classe `stars` ou `trees` pour ajouter l'animation propre à chaque zone."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 29,
+          "character": 9
+        },
+        "end": {
+          "line": 31,
+          "character": 17
+        }
+      },
+      "description": "On ajoute une seconde classe `wind` sur les arbres aprés un délai de 3 secondes, afin de laisser l'animation précédente se terminer."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 40,
+          "character": 9
+        },
+        "end": {
+          "line": 46,
+          "character": 49
+        }
+      },
+      "description": "On crée un élément `object` et on lui passe le path du svg en data. Le svg est aléatoire grâce à l'itérateur qui est généré avec un random, permettant de sélectionner l'un des 6 arbres ou des 6 étoiles disponibles."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 49,
+          "character": 9
+        },
+        "end": {
+          "line": 50,
+          "character": 50
+        }
+      },
+      "description": "On ajoute le nouvel élément dans le pop container pour le faire apparaitre."
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 101,
+          "character": 1
+        },
+        "end": {
+          "line": 108,
+          "character": 2
+        }
+      },
+      "description": "Dans le CSS, on crée une animation différente pour chaque classe."
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 136,
+          "character": 1
+        },
+        "end": {
+          "line": 138,
+          "character": 2
+        }
+      },
+      "description": "Et une animation pour les étoiles."
+    }
+  ]
+}

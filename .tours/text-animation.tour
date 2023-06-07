@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Text animation",
+  "steps": [
+    {
+      "file": "index.html",
+      "selection": {
+        "start": {
+          "line": 12,
+          "character": 9
+        },
+        "end": {
+          "line": 65,
+          "character": 15
+        }
+      },
+      "description": "On colle ici le SVG exporté via Figma. Pour réaliser ce texte :\r\n- l'écrire dans Figma, définir la police et la taille souhaitée\r\n- sélectionner \"outline stroke\" dans le menu contextuel, pour créer un path vectoriel pour chaque lettre\r\n- supprimer le `fill` et ajouter une bordure\r\n- copier en tant que SVG ou exporter\r\n- coller le code dans index.html (ou utiliser directement le fichier svg)."
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 20,
+          "character": 1
+        },
+        "end": {
+          "line": 27,
+          "character": 2
+        }
+      },
+      "description": "On place le texte comme on le souhaite et on lui ajoute les styles voulus."
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 29,
+          "character": 1
+        },
+        "end": {
+          "line": 45,
+          "character": 2
+        }
+      },
+      "description": "On anime chaque lettre en ciblant les paths de l'id `text` avec `nth-child`. On renseigne les propriétés `stroke-dasharray` et `stroke-dashoffset` avec la taille du path (obtenue en JS avec la méthode `getTotalLength()`). Puis on lance l'animation `drawLine`, avec un délai qui s'incrémente de 0.3s à chaque path."
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 95,
+          "character": 1
+        },
+        "end": {
+          "line": 99,
+          "character": 2
+        }
+      },
+      "description": "L'animation `drawLine` passe simplement la propriété `stroke-dashoffset` à 0."
+    }
+  ]
+}

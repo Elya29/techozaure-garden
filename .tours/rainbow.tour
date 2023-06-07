@@ -1,0 +1,48 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Rainbow",
+  "steps": [
+    {
+      "file": "index.html",
+      "selection": {
+        "start": {
+          "line": 67,
+          "character": 9
+        },
+        "end": {
+          "line": 67,
+          "character": 61
+        }
+      },
+      "description": "L'arc en ciel est un simple fichier .png dans une balise image, dont la propriété `opacity` est modifiée par une classe. "
+    },
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 156,
+          "character": 1
+        },
+        "end": {
+          "line": 170,
+          "character": 1
+        }
+      },
+      "description": "L'ID `rainbow` est défini directement sur la balise <img>. La classe `show` est \"toggle\" dynamiquement en JS toutes les minutes, pour faire apparaitre / disparaitre l'arc en ciel. On joue ici sur la transition de la propriété `opacity`."
+    },
+    {
+      "file": "app.js",
+      "selection": {
+        "start": {
+          "line": 59,
+          "character": 1
+        },
+        "end": {
+          "line": 61,
+          "character": 35
+        }
+      },
+      "description": "On récupère l'arc en ciel et on toggle la classe `show` avec un `setInterval()` toutes les minutes."
+    }
+  ]
+}

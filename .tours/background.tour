@@ -1,0 +1,48 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Background",
+  "steps": [
+    {
+      "file": "style.css",
+      "selection": {
+        "start": {
+          "line": 10,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 1
+        }
+      },
+      "description": "On défini le background en tant qu'image de fond du body dans le CSS. On ne peut donc pas accéder aux balises de ce SVG directement dans le fichier style. Il faut aller dans le SVG."
+    },
+    {
+      "file": "assets/background.svg",
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 2
+        }
+      },
+      "description": "Dans le fichier SVG, on peut utiliser la balise <style> puis cibler les groupes qu'on a créé dans Figma pour les animer. Ici, on anime les nuages du fond."
+    },
+    {
+      "file": "assets/background.svg",
+      "selection": {
+        "start": {
+          "line": 15,
+          "character": 1
+        },
+        "end": {
+          "line": 22,
+          "character": 2
+        }
+      },
+      "description": "Et ici, on défini les keyframes qui vont animer nos nuages..."
+    }
+  ]
+}
